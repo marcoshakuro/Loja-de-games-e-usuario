@@ -1,4 +1,4 @@
-package com.lojagamesUsuario.loja.com.usuario;
+package com.lojadegames.lojadegamescomusuario;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,5 +1,7 @@
 package com.lojadegames.lojadegamescomusuario.model;
 
+
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,7 +14,7 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "produtos")
+@Table(name = "tb_produtos")
 public class Produto {
 	
 	@Id
@@ -35,10 +37,7 @@ public class Produto {
 	@ManyToOne
 	@JsonIgnoreProperties("produtos")
 	private Categoria categoria;
-	
-	@ManyToOne
-	@JsonIgnoreProperties("produtos")
-	private Usuario usuario;
+
 
 	public long getId() {
 		return id;
